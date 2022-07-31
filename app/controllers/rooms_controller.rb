@@ -15,6 +15,12 @@ class RoomsController < ApplicationController
     end
   end
 
+  def destroy
+    room = Room.find(params[:id])
+    room.destroy
+    redirect_to root_path
+  end
+
   private
 
   def room_params
@@ -23,4 +29,3 @@ class RoomsController < ApplicationController
 
 end
 
-# DBに値を保存できるようにコントローラーを編集しましょうから！！！roo
