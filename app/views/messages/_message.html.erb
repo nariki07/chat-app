@@ -6,7 +6,7 @@
     </div>
     <div class="message-date">
       <!-- 投稿した時刻を出力する -->
-      <%= l message.created_at %>    
+      <%= l message.created_at %>
     </div>
   </div>
   <div class="lower-message">
@@ -14,5 +14,10 @@
       <!-- 投稿したメッセージ内容を記述する -->
       <%= message.content %>
     </div>
+<<<<<<< Updated upstream
+    <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+=======
+    <%= image_tag message.image, class: 'message-image' if message.image.attached? %>
+>>>>>>> Stashed changes
   </div>
 </div>
