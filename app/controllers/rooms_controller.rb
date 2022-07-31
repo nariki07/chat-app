@@ -22,5 +22,3 @@ class RoomsController < ApplicationController
   end
 
 end
-
-# DBに値を保存できるようにコントローラーを編集しましょうから！！！roo
